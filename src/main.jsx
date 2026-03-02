@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import App from "./App";
 import "./index.css";
 import { TaskProvider } from "./context/TaskContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <TaskProvider>
-    <App />
-  </TaskProvider>
+  <React.StrictMode>
+    <TaskProvider>
+      <App />
+    </TaskProvider>
+  </React.StrictMode>
 );
